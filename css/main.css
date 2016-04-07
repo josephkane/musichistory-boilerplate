@@ -11,15 +11,15 @@ ELEMENT SELECTORS
 --------------------*/
 
 a  {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
+	color: #fff;
 }
 
 a:focus {
-  color: #fff;
+	color: #fff;
 }
 
 
@@ -41,9 +41,10 @@ LAYOUT SELECTORS
 }
 
 #mainNav	{
-	border: 3px solid #000;
-  border-radius: 5px;
-	background-color: #ffb4b0
+	border: 2px solid #000;
+	border-radius: 5px;
+	background-color: #ffb4b0;
+	margin-bottom: 15px;
 }
 
 #mainNav li	{
@@ -51,20 +52,71 @@ LAYOUT SELECTORS
 	float: left;
 	display: inline-block;
 	padding: 0 10px;
-  margin-bottom: 18px;
-  border-right: 3px solid #000;
+	margin-bottom: 18px;
+	border-right: 2px solid #000;
 }
 
 #mainNav li:last-child	{
-  border-right: none;
+	border-right: none;
+}
+
+#sidebar  {
+	border: 2px solid #000;
+	border-radius: 5px;
+	background-color: #4dd7fa;
+	width: 20%;
+}
+
+.selector  {
+  padding: 10px 0 10px 10px;
+}
+
+#genreLegend  {
+  margin-bottom: 10px;
 }
 
 
+.genreCheckboxes  {
+  width: 95%;
+  margin: 0 auto;
+}
 
+.genreCheckboxes div  {
+  float: left;
+  padding: 0 0 8px 5px;
+  font-size: .85em;
+}
 
+#checkThree {
+  padding-right: 9px;
+}
 
+#checkFour  {
+  padding-right: 5px;
+}
 
+#checkOne {
+  padding-right: 2px;
+}
 
+.filterButton {
+  width: 60%;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 0 auto 15px;
+  background-color: lightgrey;
+}
+
+.filterButton:hover {
+  color: #fff;
+  background-color: darkgrey;
+}
+
+.filterButton:focus {
+  color: #fff;
+  background-color: darkgrey;
+}
 
 
 /*--------------------

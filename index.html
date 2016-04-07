@@ -8,8 +8,10 @@
 </head>
 
 <body>
-	<div id="mainContent">
+	<div id="mainContent"> <!-- main wrapper for entire content -->
 
+
+	<!-- main nav bar -->
 		<nav id="mainNav" class="clearfix">
 			<ul>
 				<li><a href="#">View Music</a></li>
@@ -17,6 +19,61 @@
 				<li><a href="#">Profile</a></li>
 			</ul>
 		</nav>
+
+		<!-- sidebar for filtering song searches -->
+		<section id="sidebar">
+
+			<div class="selector">
+				<!-- song length slider -->
+				<legend>Song length:</legend>
+				<input type="range" name="songLength" min="0" max="300" step="1">
+			</div>
+
+			<div class="selector">
+				<!-- artist drop-down box -->
+				<legend>Artist:</legend>
+				<select id="artist" autofocus>
+					<option value="null">--</option>
+					<option value="neilYoung">Neil Young</option>
+					<option value="fleetwoodMac">Fleetwood Mac</option>
+					<option value="amosLee">Amos Lee</option>
+					<option value="bruceSpringsteen">Bruce Springsteen</option>
+				</select>
+			</div>
+
+			<div class="selector">
+				<!-- album drop-down box -->
+				<legend>Album:</legend>
+				<select id="album">
+					<option value="null">--</option>
+					<option value="harvestMoon">"Harvest Moon"</option>
+					<option value="prarieWind">"Prarie Wind"</option>
+					<option value="rumours">"Rumours"</option>
+					<option value="theDance">"The Dance (Live)"</option>
+					<option value="missionBell">"Mission Bell"</option>
+					<option value="amos-lee">"Amos Lee"</option>
+					<option value="wreckingBall">"Wrecking Ball"</option>
+					<option value="overcome">"We Shall Overcome"</option>
+				</select>
+			</div>
+
+			<div class="selector clearfix">
+				<!-- genre checkbox field -->
+				<legend id="genreLegend">Genre:</legend>
+				<div class="genreCheckboxes clearfix">
+						<div id="checkOne"><input type="checkbox" name="rock" value="rock">Rock</div>
+						<div id="checkTwo"><input type="checkbox" name="classical" value="classical">Classical</div>
+						<div id="checkThree"><input type="checkbox" name="pop" value="pop">Pop</div>
+						<div id="checkFour"><input type="checkbox" name="jazz" value="jazz">Jazz</div>
+						<div id="checkFive"><input type="checkbox" name="blues" value="blues">Blues</div>
+						<div id="checkSix"><input type="checkbox" name="hipHop" value="hipHop">Hip-hop</div>
+				</div>
+			</div>
+
+			<div class="filterButton">
+				Filter
+			</div>
+		</section>
 
 	</div>
 
