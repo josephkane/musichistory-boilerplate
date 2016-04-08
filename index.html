@@ -12,13 +12,15 @@
 
 
 	<!-- main nav bar -->
-		<nav id="mainNav" class="clearfix">
-			<ul>
-				<li><a href="#">View Music</a></li>
-				<li><a href="#">Add Music</a></li>
-				<li><a href="#">Profile</a></li>
-			</ul>
-		</nav>
+		<header>
+			<nav id="mainNav" class="clearfix">
+				<ul>
+					<li><a href="#">View Music</a></li>
+					<li><a href="#">Add Music</a></li>
+					<li><a href="#">Profile</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<!-- sidebar for filtering song searches -->
 		<section id="sidebar">
@@ -60,19 +62,79 @@
 			<div class="selector clearfix">
 				<!-- genre checkbox field -->
 				<legend id="genreLegend">Genre:</legend>
-				<div class="genreCheckboxes clearfix">
-						<div id="checkOne"><input type="checkbox" name="rock" value="rock">Rock</div>
-						<div id="checkTwo"><input type="checkbox" name="classical" value="classical">Classical</div>
-						<div id="checkThree"><input type="checkbox" name="pop" value="pop">Pop</div>
-						<div id="checkFour"><input type="checkbox" name="jazz" value="jazz">Jazz</div>
-						<div id="checkFive"><input type="checkbox" name="blues" value="blues">Blues</div>
-						<div id="checkSix"><input type="checkbox" name="hipHop" value="hipHop">Hip-hop</div>
+				<div class="genreCheckboxes">
+					<div class="leftCheckboxes">
+						<ul>
+							<li><input type="checkbox" name="rock" value="rock">Rock</li>
+							<li><input type="checkbox" name="pop" value="pop">Pop</li>
+							<li><input type="checkbox" name="blues" value="blues">Blues</li>
+						</ul>
+					</div>
+
+					<div class="rightCheckboxes">
+						<ul>
+							<li><input type="checkbox" name="classical" value="classical">Classical</li>
+							<li><input type="checkbox" name="jazz" value="jazz">Jazz</li>
+							<li><input type="checkbox" name="hipHop" value="hipHop">Hip-hop</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 			<div class="filterButton">
 				Filter
 			</div>
+		</section>
+
+		<!-- song name selection box -->
+		<section id="songSelector">
+			<div class="songInfo">
+				<h2>Song Name</h2>
+				<ul>
+					<li>Artist Name</li>
+					<li>Album Name</li>
+					<li>Genre</li>
+				</ul>
+			</div>
+
+			<div class="songInfo">
+				<h2>Song Name</h2>
+				<ul>
+					<li>Artist Name</li>
+					<li>Album Name</li>
+					<li>Genre</li>
+				</ul>
+			</div>
+
+			<div class="songInfo">
+				<h2>Song Name</h2>
+				<ul>
+					<li>Artist Name</li>
+					<li>Album Name</li>
+					<li>Genre</li>
+				</ul>
+			</div>
+
+			<div class="songInfo">
+				<h2>Song Name</h2>
+				<ul>
+					<li>Artist Name</li>
+					<li>Album Name</li>
+					<li>Genre</li>
+				</ul>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
 		</section>
 
 	</div>
