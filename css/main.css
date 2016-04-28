@@ -81,6 +81,7 @@ LAYOUT SELECTORS
 	background-color: rgba(58, 151, 167, .85);
 	width: 20%;
   min-width: 175px;
+  min-height: 355px;
   display: inline-block;
 }
 
@@ -120,7 +121,7 @@ LAYOUT SELECTORS
 
 .filterButton {
   width: 60%;
-  text-align: center;
+  display: block;
   border: 1px solid #000;
   border-radius: 5px;
   margin: 0 auto 17px;
@@ -145,6 +146,7 @@ LAYOUT SELECTORS
   border: 1px solid #000;
   border-radius: 5px;
   background-color: rgba(165, 80, 46, .85);
+  min-height: 355px;
 }
 
 #songSelector li  {
