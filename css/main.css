@@ -167,6 +167,10 @@ LAYOUT SELECTORS
   color: #000;
 }
 
+.album {
+  font-style: italic;
+}
+
 
 .songInfo {
   margin-bottom: 28px;

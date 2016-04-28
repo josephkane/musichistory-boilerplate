@@ -13,8 +13,10 @@ function dataCall () {
 		songInfo += "<div class='songInfo'>";
 		songInfo += "<h2>" + data.songs[i].song + "</h2>";
 		songInfo += "<ul><li>" + data.songs[i].artist + "</li>";
-		songInfo += "<li>" + data.songs[i].
+		songInfo += "<li class='album'>" + data.songs[i].album + "</li>";
+		songInfo += "<li>" + data.songs[i].genre + "</li></ul></div";
 
+	songList.innerHTML = songInfo;
 	}
 
 	console.log(data);
