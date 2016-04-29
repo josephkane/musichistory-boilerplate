@@ -119,22 +119,25 @@ LAYOUT SELECTORS
 }
 
 
-.filterButton {
-  width: 60%;
-  display: block;
+.buttons {
   border: 1px solid #000;
   border-radius: 5px;
-  margin: 0 auto 17px;
-  padding: 5px 0;
   background-color: rgba(211, 211, 211, .85);
 }
 
-.filterButton:hover {
+.filterButton {
+  width: 60%;
+  margin: 0 auto 17px;
+  padding: 5px 0;
+  display: block;
+}
+
+.buttons:hover {
   color: #fff;
   background-color: rgba(169, 169, 169, .85);
 }
 
-.filterButton:focus {
+.buttons:focus {
   color: #fff;
   background-color: rgba(169, 169, 169, .85);
 }
