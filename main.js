@@ -9,32 +9,44 @@ function dataCall () {
 	console.log(data);
 	console.log(data.songs.length);
 
+	populateDOM(data);
+};
+
+function populateDOM (XHRdata) {
 	// create a variable to use to populate the DOM with the data you get from the XHR
-	var songInfo = "";
+	// loop through the array provided (via argument) and add HTML strings and array elements
+	for (var i = 0; i < XHRdata.songs.length; i++) {
+		var songInfo = "";
+		songInfo += `<div id='row${i}' class='songInfo'>`;
+		songInfo += `<h2>${XHRdata.songs[i].song}</h2>`;
+		songInfo += `<ul><li>${XHRdata.songs[i].artist}</li>`;
+		songInfo += `<li class='album'>${XHRdata.songs[i].album}</li>`;
+		songInfo += `<li>${XHRdata.songs[i].genre}</li>`;
+		songInfo += `<li><button id='deleteButton${i}' class='buttons' type='button'>Delete</button></li></ul></div>`;
 
-	for (var i = 0; i < data.songs.length; i++) {
-		songInfo += "<div class='songInfo'>";
-		songInfo += "<h2>" + data.songs[i].song + "</h2>";
-		songInfo += "<ul><li>" + data.songs[i].artist + "</li>";
-		songInfo += "<li class='album'>" + data.songs[i].album + "</li>";
-		songInfo += "<li>" + data.songs[i].genre + "</li>";
-		songInfo += "<li><button class='deleteButton buttons'>Delete</button></li></ul></div>";
+		songList.innerHTML += songInfo;
+
+		var deleteButton = document.getElementById(`deleteButton${i}`);
+
+		deleteButton.addEventListener("click", alert("!"));
+
 	};
-
-	var deleteButtons = songSelector.getElementsByClassName("deleteButton");
-
-	for (var j = 0; j < deleteButtons.length; j++) {
-		deleteButtons[j].addEventListener("click", function() {
-			songInfo.innerHTML = "";
-		});
-	};
-
-	console.log(deleteButtons);
-	console.log(typeof deleteButtons[0]);
-
-	songList.innerHTML = songInfo;
+	// addEventListeners(songList);
 
 };
+
+// function addEventListeners (DOMdata) {
+
+// 	var deleteButtons = songSelector.getElementsByClassName("deleteButton");
+
+// 	for (var j = 0; j < deleteButtons.length; j++) {
+// 		deleteButtons[j].addEventListener("click", function() {
+// 			DOMdata.innerHTML = "";
+// 		});
+
+// 	};
+
+// };
 
 var dataRequest = new XMLHttpRequest();
 
