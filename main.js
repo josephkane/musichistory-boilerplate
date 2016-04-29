@@ -1,5 +1,6 @@
 // target the element on the DOM where you will insert data and assign it to a variable
 var songList = document.getElementById("songSelector");
+songList.addEventListener("click", clearRow);
 
 // create the function that will populate the variable (DOM Element)
 function dataCall () {
@@ -26,27 +27,20 @@ function populateDOM (XHRdata) {
 
 		songList.innerHTML += songInfo;
 
-		var deleteButton = document.getElementById(`deleteButton${i}`);
-
-		deleteButton.addEventListener("click", alert("!"));
-
 	};
-	// addEventListeners(songList);
 
 };
 
-// function addEventListeners (DOMdata) {
+function clearRow (event) {
+	var element = event.target.parentNode.parentNode.parentNode;
 
-// 	var deleteButtons = songSelector.getElementsByClassName("deleteButton");
+	if (element.className === "songInfo") {
+		element.innerHTML = "";
+		console.log(event);
+	}
+}
 
-// 	for (var j = 0; j < deleteButtons.length; j++) {
-// 		deleteButtons[j].addEventListener("click", function() {
-// 			DOMdata.innerHTML = "";
-// 		});
 
-// 	};
-
-// };
 
 var dataRequest = new XMLHttpRequest();
 
