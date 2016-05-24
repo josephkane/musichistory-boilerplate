@@ -11,7 +11,7 @@ ELEMENT SELECTORS
 
 body  {
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: .85em;
+  font-size: .85rem;
   font-weight: 300;
   background: url(../img/orch2.jpg) no-repeat center;
   background-size: cover;
@@ -51,11 +51,16 @@ LAYOUT SELECTORS
 --------------------*/
 
 #mainContent	{
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 }
 
+#nav-content {
+  display: flex;
+}
+
 #mainNav	{
+  width: 100%;
 	border: 1px solid #000;
 	border-radius: 5px;
 	background-color: rgba(146, 146, 146, .85);
@@ -64,29 +69,28 @@ LAYOUT SELECTORS
 
 #mainNav li	{
 	list-style: none;
-	float: left;
 	display: inline-block;
-	padding: 0 10px;
-	margin-bottom: 18px;
 	border-right: 1px solid #000;
+  padding: 0 10px;
 }
 
 #mainNav li:last-child	{
 	border-right: none;
 }
 
+#song-content {
+  display: flex;
+}
+
 #sidebar  {
 	border: 1px solid #000;
 	border-radius: 5px;
 	background-color: rgba(58, 151, 167, .85);
-	width: 20%;
-  min-width: 175px;
-  min-height: 355px;
   display: inline-block;
 }
 
 .selector  {
-  padding: 10px 0 10px 10px;
+  padding: 10px;
 }
 
 #genreLegend  {
@@ -95,6 +99,7 @@ LAYOUT SELECTORS
 
 
 .genreCheckboxes  {
+  display: flex;
   width: 95%;
   margin: 0 auto;
 }
@@ -105,17 +110,15 @@ LAYOUT SELECTORS
 }
 
 .genreCheckboxes li  {
-  padding-bottom: 10px;
+
 }
 
 .leftCheckboxes {
-  float: left;
-  width:50%;
+
 }
 
 .rightCheckboxes {
-  float: right;
-  width: 50%;
+
 }
 
 
@@ -127,8 +130,7 @@ LAYOUT SELECTORS
 
 .filterButton {
   width: 60%;
-  margin: 0 auto 17px;
-  padding: 5px 0;
+  margin: 0 auto;
   display: block;
 }
 
@@ -143,22 +145,18 @@ LAYOUT SELECTORS
 }
 
 #songSelector {
-  float: right;
-  display: inline-block;
-  width: 78.5%;
+  width: 80%;
   border: 1px solid #000;
   border-radius: 5px;
   background-color: rgba(165, 80, 46, .85);
-  min-height: 355px;
+  margin-left: 15px;
 }
 
 #songSelector li  {
- list-style: none;
- /*float: left;*/
- display: inline-block;
- padding: 0 18px;
- /*margin-bottom: 18px;*/
- border-right: 1px solid #000;
+  display: inline-block;
+  list-style: none;
+  border-right: 1px solid #000;
+  padding: 5px 10px;
 }
 
 #songSelector li:last-child  {
@@ -166,8 +164,8 @@ LAYOUT SELECTORS
 }
 
 #songSelector h2  {
-  padding-left: 30px;
   color: #000;
+  margin-left: 20px;
 }
 
 .album {
@@ -176,30 +174,20 @@ LAYOUT SELECTORS
 
 
 .songInfo {
-  margin-bottom: 28px;
+
 }
 
 
 .songInfo h2 {
-  margin-bottom: 7px;
-  font-size: 1.7em;
+  font-size: 1.1em;
   font-weight: normal;
 }
 
 
-
-
-
-
-
-
-/*--------------------
-FLOAT CLEARFIX
---------------------*/
-
-.clearfix::after	{
-	content: "";
-	display: table;
-	clear: both;
+#songSelector,
+#sidebar {
+  min-height: 320px;
 }
+
+
 
