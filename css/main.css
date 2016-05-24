@@ -81,6 +81,7 @@ LAYOUT SELECTORS
 	background-color: rgba(58, 151, 167, .85);
 	width: 20%;
   min-width: 175px;
+  min-height: 355px;
   display: inline-block;
 }
 
@@ -118,22 +119,25 @@ LAYOUT SELECTORS
 }
 
 
-.filterButton {
-  width: 60%;
-  text-align: center;
+.buttons {
   border: 1px solid #000;
   border-radius: 5px;
-  margin: 0 auto 17px;
-  padding: 5px 0;
   background-color: rgba(211, 211, 211, .85);
 }
 
-.filterButton:hover {
+.filterButton {
+  width: 60%;
+  margin: 0 auto 17px;
+  padding: 5px 0;
+  display: block;
+}
+
+.buttons:hover {
   color: #fff;
   background-color: rgba(169, 169, 169, .85);
 }
 
-.filterButton:focus {
+.buttons:focus {
   color: #fff;
   background-color: rgba(169, 169, 169, .85);
 }
@@ -145,6 +149,7 @@ LAYOUT SELECTORS
   border: 1px solid #000;
   border-radius: 5px;
   background-color: rgba(165, 80, 46, .85);
+  min-height: 355px;
 }
 
 #songSelector li  {
@@ -163,6 +168,10 @@ LAYOUT SELECTORS
 #songSelector h2  {
   padding-left: 30px;
   color: #000;
+}
+
+.album {
+  font-style: italic;
 }
 
 
