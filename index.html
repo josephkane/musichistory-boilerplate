@@ -21,7 +21,7 @@
 				</nav>
 			</header>
 
-			<div id="song-content" ng-controller="mhSideBar">
+			<div id="song-content" ng-controller="musicHistory">
 			<!-- sidebar for filtering song searches -->
 				<section id="sidebar">
 
@@ -34,28 +34,18 @@
 					<div class="selector">
 						<!-- artist drop-down box -->
 						<legend>Artist:</legend>
-						<select id="artist" autofocus>
-							<option value="null">--</option>
-							<option value="neilYoung">Neil Young</option>
-							<option value="fleetwoodMac">Fleetwood Mac</option>
-							<option value="amosLee">Amos Lee</option>
-							<option value="bruceSpringsteen">Bruce Springsteen</option>
+						<select id="artist"
+							ng-model="selectedArtist"
+							ng-options="item.artist for item in songs">
 						</select>
 					</div>
 
 					<div class="selector">
 						<!-- album drop-down box -->
 						<legend>Album:</legend>
-						<select id="album">
-							<option value="null">--</option>
-							<option value="harvestMoon">"Harvest Moon"</option>
-							<option value="prarieWind">"Prarie Wind"</option>
-							<option value="rumours">"Rumours"</option>
-							<option value="theDance">"The Dance (Live)"</option>
-							<option value="missionBell">"Mission Bell"</option>
-							<option value="amos-lee">"Amos Lee"</option>
-							<option value="wreckingBall">"Wrecking Ball"</option>
-							<option value="overcome">"We Shall Overcome"</option>
+						<select id="album"
+							ng-model="selectedAlbum"
+							ng-options="item.album for item in songs">
 						</select>
 					</div>
 
@@ -86,7 +76,15 @@
 
 			<!-- song name selection box -->
 				<section id="songSelector">
-
+					<div class="songInfo" ng-repeat="song in songs">
+						<h2>{{song.song}}</h2>
+						<ul>
+							<li>{{song.artist}}</li>
+							<li class="album">{{song.album}}</li>
+							<li>{{song.genre}}</li>
+							<li><button class="buttons" type="button">Delete</button></li>
+						</ul>
+					</div>
 				</section>
 
 		</div>
@@ -95,6 +93,6 @@
 		<script src="bower_components/jQuery/dist/jquery.min.js"></script>
 		<script src="bower_components/firebase/firebase.js"></script>
 		<script src="javascripts/app.js"></script>
-		<script src="javascripts/controllers/sidebar.js"></script>
+		<script src="javascripts/controllers/musicHistory.js"></script>
 	</body>
 </html>
