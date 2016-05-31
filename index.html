@@ -8,126 +8,96 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
-	<div id="mainContent"> <!-- main wrapper for entire content -->
+	<body>
+		<div id="mainContent"> <!-- main wrapper for entire content -->
 
 
-	<!-- main nav bar -->
-		<header id="nav-content">
-			<nav id="mainNav" class="clearfix">
-				<ul>
-					<li><a href="#">View Music</a></li>
-					<li><a href="#">Add Music</a></li>
-					<li><a href="#">Profile</a></li>
-				</ul>
-			</nav>
-		</header>
+		<!-- main nav bar -->
+			<header id="nav-content">
+				<nav id="mainNav" class="clearfix">
+					<ul>
+						<li><a href="#">View Music</a></li>
+						<li><a href="#">Add Music</a></li>
+						<li><a href="#">Profile</a></li>
+					</ul>
+				</nav>
+			</header>
 
-		<div id="song-content">
-		<!-- sidebar for filtering song searches -->
-		<section id="sidebar">
+			<div id="song-content">
+			<!-- sidebar for filtering song searches -->
+			<section id="sidebar">
 
-			<div class="selector">
-				<!-- song length slider -->
-				<legend>Song length:</legend>
-				<input type="range" name="songLength" min="0" max="300" step="1">
-			</div>
+				<div class="selector">
+					<!-- song length slider -->
+					<legend>Song length:</legend>
+					<input type="range" name="songLength" min="0" max="300" step="1">
+				</div>
 
-			<div class="selector">
-				<!-- artist drop-down box -->
-				<legend>Artist:</legend>
-				<select id="artist" autofocus>
-					<option value="null">--</option>
-					<option value="neilYoung">Neil Young</option>
-					<option value="fleetwoodMac">Fleetwood Mac</option>
-					<option value="amosLee">Amos Lee</option>
-					<option value="bruceSpringsteen">Bruce Springsteen</option>
-				</select>
-			</div>
+				<div class="selector">
+					<!-- artist drop-down box -->
+					<legend>Artist:</legend>
+					<select id="artist" autofocus>
+						<option value="null">--</option>
+						<option value="neilYoung">Neil Young</option>
+						<option value="fleetwoodMac">Fleetwood Mac</option>
+						<option value="amosLee">Amos Lee</option>
+						<option value="bruceSpringsteen">Bruce Springsteen</option>
+					</select>
+				</div>
 
-			<div class="selector">
-				<!-- album drop-down box -->
-				<legend>Album:</legend>
-				<select id="album">
-					<option value="null">--</option>
-					<option value="harvestMoon">"Harvest Moon"</option>
-					<option value="prarieWind">"Prarie Wind"</option>
-					<option value="rumours">"Rumours"</option>
-					<option value="theDance">"The Dance (Live)"</option>
-					<option value="missionBell">"Mission Bell"</option>
-					<option value="amos-lee">"Amos Lee"</option>
-					<option value="wreckingBall">"Wrecking Ball"</option>
-					<option value="overcome">"We Shall Overcome"</option>
-				</select>
-			</div>
+				<div class="selector">
+					<!-- album drop-down box -->
+					<legend>Album:</legend>
+					<select id="album">
+						<option value="null">--</option>
+						<option value="harvestMoon">"Harvest Moon"</option>
+						<option value="prarieWind">"Prarie Wind"</option>
+						<option value="rumours">"Rumours"</option>
+						<option value="theDance">"The Dance (Live)"</option>
+						<option value="missionBell">"Mission Bell"</option>
+						<option value="amos-lee">"Amos Lee"</option>
+						<option value="wreckingBall">"Wrecking Ball"</option>
+						<option value="overcome">"We Shall Overcome"</option>
+					</select>
+				</div>
 
-			<div class="selector clearfix">
-				<!-- genre checkbox field -->
-				<legend id="genreLegend">Genre:</legend>
-				<div class="genreCheckboxes">
-					<div class="leftCheckboxes">
-						<ul>
-							<li><input type="checkbox" name="rock" value="rock">Rock</li>
-							<li><input type="checkbox" name="pop" value="pop">Pop</li>
-							<li><input type="checkbox" name="blues" value="blues">Blues</li>
-						</ul>
-					</div>
+				<div class="selector clearfix">
+					<!-- genre checkbox field -->
+					<legend id="genreLegend">Genre:</legend>
+					<div class="genreCheckboxes">
+						<div class="leftCheckboxes">
+							<ul>
+								<li><input type="checkbox" name="rock" value="rock">Rock</li>
+								<li><input type="checkbox" name="pop" value="pop">Pop</li>
+								<li><input type="checkbox" name="blues" value="blues">Blues</li>
+							</ul>
+						</div>
 
-					<div class="rightCheckboxes">
-						<ul>
-							<li><input type="checkbox" name="classical" value="classical">Classical</li>
-							<li><input type="checkbox" name="jazz" value="jazz">Jazz</li>
-							<li><input type="checkbox" name="hipHop" value="hipHop">Hip-hop</li>
-						</ul>
+						<div class="rightCheckboxes">
+							<ul>
+								<li><input type="checkbox" name="classical" value="classical">Classical</li>
+								<li><input type="checkbox" name="jazz" value="jazz">Jazz</li>
+								<li><input type="checkbox" name="hipHop" value="hipHop">Hip-hop</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<button class="filterButton buttons">Filter</button>
-		</section>
+				<button class="filterButton buttons">Filter</button>
+			</section>
 
-		<!-- song name selection box -->
-		<section id="songSelector">
-			<!-- <div class="songInfo">
-				<h2>Song Name</h2>
-				<ul>
-					<li>Artist Name</li>
-					<li>Album Name</li>
-					<li>Genre</li>
-				</ul>
-			</div>
+			<!-- song name selection box -->
+			<section id="songSelector">
 
-			<div class="songInfo">
-				<h2>Song Name</h2>
-				<ul>
-					<li>Artist Name</li>
-					<li>Album Name</li>
-					<li>Genre</li>
-				</ul>
-			</div>
+			</section>
 
-			<div class="songInfo">
-				<h2>Song Name</h2>
-				<ul>
-					<li>Artist Name</li>
-					<li>Album Name</li>
-					<li>Genre</li>
-				</ul>
-			</div>
+		</div>
 
-			<div class="songInfo">
-				<h2>Song Name</h2>
-				<ul>
-					<li>Artist Name</li>
-					<li>Album Name</li>
-					<li>Genre</li>
-				</ul>
-			</div>
- -->
-		</section>
-
-	</div>
-
-	<script src="main.js"></script>
-</body>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/jQuery/dist/jquery.min.js"></script>
+		<script src="bower_components/firebase/firebase.js"></script>
+		<script src="javascripts/data.js"></script>
+		<script src="javascripts/eventListeners.js"></script>
+		<script src="javascripts/main.js"></script>
+	</body>
 </html>
