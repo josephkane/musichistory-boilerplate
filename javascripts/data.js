@@ -1,3 +1,5 @@
+'use strict';
+
 var Songs = (function (songs) {
 
 	const API_URL = 'https://music-history-64219.firebaseio.com/';
@@ -5,7 +7,6 @@ var Songs = (function (songs) {
 	songs.getData = () => {
 		$.get(`${API_URL}.json`)
 			.then((data) => {
-				console.log("data: ", data);
 				songs.populateDOM(data);
 		});
 	};

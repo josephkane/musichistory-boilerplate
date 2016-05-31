@@ -5,25 +5,49 @@
 			"artist": "Neil Young",
 			"album": "Harvest Moon",
 			"song": "Unknown Legend",
-			"genre": "Rock"
+			"genre": "Folk"
 		},
 		{
 			"artist": "Neil Young",
 			"album": "Harvest Moon",
 			"song": "War of Man",
-			"genre": "Rock"
+			"genre": "Folk"
 		},
 		{
 			"artist": "Neil Young",
 			"album": "Prarie Wind",
 			"song": "The Painter",
-			"genre": "Rock"
+			"genre": "Folk"
 		},
 		{
 			"artist": "Neil Young",
 			"album": "Prarie Wind",
 			"song": "When God Made Me",
-			"genre": "Rock"
+			"genre": "Folk"
+		},
+		{
+			"artist": "Amos Lee",
+			"album": "Mission Bell",
+			"song": "El Camino",
+			"genre": "Folk"
+		},
+		{
+			"artist": "Amos Lee",
+			"album": "Mission Bell",
+			"song": "Violin",
+			"genre": "Folk"
+		},
+		{
+			"artist": "Amos Lee",
+			"album": "Amos Lee",
+			"song": "Arms Of A Woman",
+			"genre": "Folk"
+		},
+		{
+			"artist": "Amos Lee",
+			"album": "Amos Lee",
+			"song": "Keep It Loose, Keep It Tight",
+			"genre": "Folk"
 		}
 
 	]

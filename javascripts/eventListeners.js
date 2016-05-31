@@ -10,7 +10,6 @@ var Songs = (function(songs) {
 
 	songs.clearRow = (e) => {
 		let element = $(e.target).closest('div');
-		console.log(element);
 		$(element).html('');
 	};
 
