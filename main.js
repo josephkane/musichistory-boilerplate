@@ -7,9 +7,6 @@ function dataCall () {
 
 // assign data that was pulled in via XHR to a variable
 	var data = JSON.parse(this.responseText);
-	console.log(data);
-	console.log(data.songs.length);
-
 	populateDOM(data);
 };
 
