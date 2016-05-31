@@ -1,0 +1,20 @@
+{
+  "name": "musichistory-boilerplate",
+  "description": "<!--",
+  "main": "main.js",
+  "authors": [
+    "Joseph Kane <josephckane@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/josephkane/musichistory-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "^2.2.4"
+  }
+}
